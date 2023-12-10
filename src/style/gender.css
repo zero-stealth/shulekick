@@ -1,0 +1,28 @@
+@media screen {
+
+  .product-component {
+    display: flex;
+  }
+
+
+  .product-container {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+
+  .product-empty {
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+}
+

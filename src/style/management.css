@@ -1,0 +1,259 @@
+@media screen {
+  .game-container {
+    display: flex;
+    width: inherit;
+    flex-direction: column;
+  }
+
+  .game-h-b {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .game-game-p {
+    gap: 20px;
+    display: flex;
+    overflow-x: scroll;
+    flex-direction: column;
+    background-color: var(--fade-color);
+  }
+
+  .Account-info {
+    gap: 10px;
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+  }
+
+  .Account-card {
+    width: 200px;
+    display: flex;
+    padding: 10px;
+    min-width: 200px;
+    border-radius: 8px;
+    flex-direction: column;
+    background-color: var(--dark-primary-color);
+  }
+
+  .Account-card h5 {
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    color: var(--background-color);
+  }
+
+  .Account-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Account-card-icon h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--background-color);
+  }
+
+  .icon-acc {
+    width: 50px;
+    height: 50px;
+    fill: var(--background-color);
+  }
+
+  .game-table {
+    overflow: hidden;
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .header-info h1 {
+    font-size: 1rem;
+    color: var(--background-color);
+  }
+
+  .game-cf thead {
+    font-size: 0.6rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+  }
+
+  .game-cf tbody {
+    font-size: 0.7rem;
+  }
+
+  .game-cf th,
+  td {
+    padding: 10px;
+  }
+
+  .game-cf td {
+    font-weight: 600;
+    text-align: center;
+    border-bottom: none;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-light-color);
+  }
+
+  .game-pi {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .game-cf th {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--light-color);
+  }
+
+  .game-tbl-img {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .Account-pi {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 360%;
+    object-position: center;
+  }
+
+  .Account-t-con {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Account-toggle {
+    gap: 10px;
+    padding: 5px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    border-radius: 360px;
+    transition: all 0.8s ease 0s;
+    -webkit-transition: all 0.8s ease 0s;
+    background-color: var(--primary-color);
+  }
+
+  .Account-mode {
+    width: 25px;
+    height: 25px;
+    border-radius: 360%;
+    background-color: var(--primary-light-color);
+  }
+
+  .Account-toggle span {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--light-color);
+  }
+
+  .on {
+    display: flex;
+    background-color: var(--secondary-color);
+  }
+
+  .on span {
+    color: var(--primary-light-color);
+  }
+
+  .off {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .Account-delete {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon-delete {
+    width: 24px;
+    height: 24px;
+    fill: var(--secondary-color);
+  }
+
+  .icon-file {
+    width: 24px;
+    height: 24px;
+    fill: var(--primary-color);
+  }
+}
+
+.game-edit {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  position: fixed;
+  overflow: hidden;
+  overflow-y: auto;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+}
+
+.mobile-exit {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: end;
+}
+
+.icon-exit {
+  height: 24px;
+  width: 24px;
+  fill: var(--background-color);
+}
+
+.showEdit {
+  display: flex;
+}
+
+.closeEdit {
+  display: none;
+}
+
+.game-delete {
+  cursor: pointer;
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .game-game-p {
+    flex-direction: row;
+  }
+
+  .game-cf {
+    height: 100%;
+    min-width: 100%;
+    max-height: 650px;
+  }
+
+  .game-cf thead {
+    font-size: 0.7rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+  }
+
+  .game-cf tbody {
+    font-size: 0.8rem;
+  }
+}

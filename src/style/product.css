@@ -1,0 +1,58 @@
+@media screen {
+  .product-component {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .product-btn {
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+  }
+
+  .arrow-button {
+    background-color: transparent;
+  }
+
+  .icon-product-section {
+    height: 30px;
+    fill: var(--primary-color);
+  }
+
+  .product-container {
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .product-wrapper {
+    gap: 10px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .product-empty {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+    .product-component {
+        padding: 0;
+    }
+}

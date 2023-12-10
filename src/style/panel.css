@@ -1,0 +1,257 @@
+@media screen {
+  .panel-container {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    overflow: hidden;
+    overflow-y: hidden;
+    color: var(--primary-color);
+    background-color: var(--primary-light-color);
+  }
+
+  .pan-arrow-container {
+    gap: 10px;
+    display: flex;
+    padding: 8px;
+    border-left: 0;
+    border-right: 0;
+    cursor: pointer;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-light-color);
+  
+  }
+
+
+
+  .pan-arrow-container span {
+    font-size: .9rem;
+    color: var(--background-color);
+  }
+
+  .pan-arrow {
+    height: 20px;
+    fill: var(--background-color);
+  }
+
+  .panel-bar {
+    height: 100%;
+    display: flex;
+    z-index: 9999;
+    flex-direction: column;
+    transition: all 0.5s ease 0s;
+    justify-content: space-between;
+    -webkit-transition: all 0.5s ease 0s;
+    background-color: var(--primary-color);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+
+
+  .panel-menu {
+    right: 0;
+    bottom: 0;
+    right: 45%;
+    padding: 5px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 0 0;
+    background-color: transparent;
+    border: 2px solid var(--background-light);
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  }
+
+
+  .panel-icon-nav {
+    height: 30px;
+    fill: var(--background-light);
+  }
+
+  .panel-profile {
+    display: flex;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--fade-color);
+  }
+
+  .panel-profile-info {
+    gap: 10px;
+    display: none;
+    flex-direction: column;
+    color: var(--background-light);
+  }
+
+  .panel-profile-info h1 {
+    font-size: 0.9rem;
+    font-weight: 200;
+    text-transform: capitalize;
+  }
+
+  .panel-profile-info span {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    color: var(--background-light);
+  }
+
+  .panel-img {
+    width: 100%;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--background-color);
+  }
+
+  .panel-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .panel-nav h1 {
+    font-size: 0.9rem;
+  }
+
+  .panel-btn-container {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .panel-bar span {
+    display: none;
+  }
+
+  .panel-btn {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    align-items: center;
+    color: var(--background-light);
+    background-color: var(--background-color);
+  }
+
+  .panel-btn span {
+    font-size: 0.7rem;
+    font-weight: 200;
+    text-transform: capitalize;
+  }
+
+  .panel-btn:hover {
+    color: var(--primary-color);
+    background-color: var(--primary-light-color);
+  }
+
+  .panel-btn:hover .icon-panel {
+    fill: var(--primary-color);
+  }
+
+  .icon-panel {
+    height: 20px;
+    fill: var(--background-color);
+  }
+
+  .active-cp {
+    color: var(--background-light);
+    background-color: var( --primary-light-color);
+    border-left: 2px solid var(--primary-light-color);
+  }
+
+  .active-cp .icon-panel {
+    fill: var(--primary-color);
+  }
+
+  .inactive-cp {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+  }
+
+  .panel-main {
+    width: 100%;
+    padding: 4px;
+    overflow-y: auto;
+  }
+
+  .close-dash {
+    position: absolute;
+    left: 100000000000px;
+  }
+
+  .float-menu {
+    bottom: 10px;
+    right:10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-light-color);
+  }
+
+  .float-m-icon {
+    height: 20px;
+    width: 20px;
+    fill: var(--primary-color);
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .panel-profile-info {
+    display: flex;
+  }
+
+  .float-menu {
+    display: none;
+  }
+
+  
+  .panel-img {
+    width: auto;
+    height: 160px;
+    background-size: contain;
+  }
+
+  .panel-nav {
+    gap: 20px;
+  }
+
+  
+  .panel-profile {
+    padding: 20px 10px;
+  }
+  .panel-bar {
+    flex: 8%;
+  }
+
+  .panel-bar span {
+    display: flex;
+  }
+
+  .panel-menu {
+    display: none;
+  }
+
+  .panel-btn {
+    font-size: 0.9rem;
+  }
+
+  .panel-main {
+    flex: 80%;
+    min-width: 20%;
+    overflow-y: hidden;
+  }
+}

@@ -1,0 +1,127 @@
+@media screen {
+.cart-component {
+    top: 0;
+    /* left: 0; */
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    flex-direction: column;
+    transition: all 0.5s ease 0s;
+    justify-content: space-between;
+    -webkit-transition: all 0.5s ease 0s;
+    background-color: var(--background-color);
+    
+}
+
+.slideIn {
+    right: 0;
+    width: var(--sidebar-mobile-width);
+    box-shadow: var(--background-shadow);
+
+  }
+
+  .slideOut {
+    width: 0;
+    box-shadow: none;
+  }
+
+.cart-header  {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+}
+
+.cart-header h1 {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: var(--background-color);
+}
+
+.icon-exit , .icon-cart {
+    width: 30px;
+    height: 30px;
+    fill: var(--background-color);
+}
+
+.icon-exit {
+    cursor: pointer;
+
+}
+
+.cart-content {
+    gap: 10px;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 500px;
+    flex-direction: column;
+}
+
+.checkout-container {
+    gap: 10px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    background-color: var(--light-color);
+}
+
+.checkinfo {
+    display: flex;
+    font-size: .9rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkinfo h4 {
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+.checkinfo h1 {
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.checkout-btn-contain {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.checkout-btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    text-transform: capitalize;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+}
+
+.checkout-btn-contain span {
+    cursor: pointer;
+    font-size: .7rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    
+}
+
+
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+    .slideIn {
+        width: var(--sidebar-desktop-width);
+
+    }
+
+}

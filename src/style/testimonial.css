@@ -1,0 +1,134 @@
+@media screen {
+  .testimonial-container {
+    gap: 40px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--light-color);
+  }
+
+  .testimonial-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .testimonial-header span {
+    font-size: .8rem ;
+    color: var(--primary-color);
+  }
+
+  .testimonial-header h1 {
+    font-size: 1rem ;
+  }
+
+  .profile-testimonial {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 360%;
+    object-position: center;
+    
+  }
+
+  .center-profile {
+    width: 50px;
+    height: 50px;
+
+  }
+
+  .center-testimonial {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 360%;
+    justify-content: center;
+    border: 1px solid var(--tertiary-color);
+  }
+
+  .testimonial-inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .testimonial-top {
+    gap: 50px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+  }
+
+
+  .testimonial-center {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .testimonial-center p {
+    font-size: .8rem;
+    text-align: center;
+  }
+
+  .testimonial-center span {
+    font-size: .8rem;
+    font-weight: 600;
+  }
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .testimonial-container {
+    gap: 80px;
+    height: 70vh;
+  }
+
+
+  .testimonial-header span {
+    font-size: 1rem ;
+  }
+
+  .testimonial-header h1 {
+    font-size: 1.5rem ;
+  }
+
+  .profile-testimonial {
+    width: 50px;
+    height: 50px;
+    
+  }
+
+  .center-profile {
+    width: 70px;
+    height: 70px;
+
+  }
+
+  .center-testimonial {
+    width: 80px;
+    height: 80px;
+  }
+
+  .testimonial-top-l {
+    position: relative;
+    left: 120px;
+  }
+
+  .testimonial-center {
+    gap: 10px;
+  }
+
+  .testimonial-center p {
+    font-size: 1rem;
+  }
+
+  .testimonial-center span {
+    font-size: 1rem;
+  }
+}

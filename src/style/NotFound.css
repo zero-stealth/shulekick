@@ -1,0 +1,37 @@
+@media screen {
+
+.container-not-found{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    position: fixed;
+    overflow-y: auto;
+    overflow: hidden;
+    justify-content: end;
+    background-size: fill;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--background-color);
+    background-image: url('../assets/notfound.png');
+}
+
+
+.not-f-btn {
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 12px 60px;
+    text-transform: capitalize;
+    color: var(--background-color);
+    background-color:var(--primary-color);
+}
+
+}
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+
+
+}

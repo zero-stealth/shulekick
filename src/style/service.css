@@ -1,0 +1,65 @@
+@media screen {
+.service-container {
+  gap: 10px;
+  display: flex;
+  padding: 50px 10px;
+  flex-direction: column;
+}
+
+.service-card {
+  gap: 10px;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  align-items: start;
+  flex-direction: column;
+  color: var(--tertiary-color);
+  border: 1px solid var(--tertiary-color);
+}
+
+.service-card:hover {
+  border: none;
+  color: var(--background-color);
+  background-color: var(--tertiary-blue-color);
+}
+
+.service-card:hover h1 {
+  color: var(--background-color);
+}
+
+
+.service-card h1 {
+  font-size: .9rem;
+  font-weight: 900;
+  text-decoration: underline;
+  color: var(--tertiary-color);
+}
+
+.service-card p {
+  font-size: .8rem;
+  font-weight: 300;
+
+}
+
+.service-card-icon {
+  height: 40px;
+  fill: var(--tertiary-color);
+}
+
+.service-card:hover .service-card-icon {
+  fill: var(--background-color);
+}
+
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .service-container {
+    flex-direction: row;
+  }
+
+  .service-card {
+    width: 350px;
+  }
+}
+

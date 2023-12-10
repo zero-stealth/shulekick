@@ -1,0 +1,77 @@
+@media screen {
+
+  .cart-card-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding: 10px;
+    align-items: start;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--light-color);
+  }
+
+  .cart-card-wrapper {
+    gap: 15px;
+    display: flex;
+    height: 100%;
+
+  }
+  .cart-card-image-container {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-color);
+  }
+
+  .cart-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-color: var(--light-color);
+  }
+
+  .cart-card-info {
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+  }
+
+  .cart-card-info h1 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .cart-card-info h3 {
+    font-size: .9rem;
+    font-weight: 400;
+
+  }
+
+  .cart-card-info p {
+    font-size: .9rem;
+    font-weight: 700;
+    color: var(--primary-color);
+
+  }
+
+  .cart-card-icon-delete-wrapper {
+    padding: 4px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    
+  }
+
+
+
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+}
+

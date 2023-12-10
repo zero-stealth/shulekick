@@ -1,0 +1,157 @@
+@media screen {
+  .main-mpesa {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-mpesa span {
+    text-align: center;
+  }
+  .m-image,
+  .mpesa-py {
+    flex: 50%;
+  }
+
+  .m-image {
+    display: none;
+  }
+
+  .mpesa-py {
+    gap: 20px;
+    display: flex;
+    padding: 20px 10px;
+    flex-direction: column;
+  }
+
+  .py-title p {
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .payment-type {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .payment-d {
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 200px;
+    border-radius: 8px;
+    color: var(--background-color);
+    background-color: var(--tertiary-color);
+  }
+
+  .payment-d h1 {
+    font-size: 1rem;
+
+  }
+
+  .payment-d ul li {
+    text-transform: capitalize;
+    list-style: circle;
+  }
+
+  .mpesa-logo {
+    width: 100px;
+  }
+
+  .f-controller {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-container {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-amount {
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--background-color);
+    background-color: var(--tertiary-color);
+  }
+
+  .input-container label {
+    font-size: 1rem;
+  }
+
+  .f-input {
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 2px solid var(--tertiary-color);
+  }
+
+  .f-input::placeholder {
+    color: var(--icon-color);
+  }
+
+  .f-input:hover {
+    border: 2px solid var(--primary-color);
+  }
+
+  .btn-py {
+    outline: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: .8rem;
+    border-radius: 8px;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+  }
+
+  .btn-wp {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .btn-wp a {
+    font: 1rem;
+    cursor: pointer;
+}
+}
+
+/* using it as global style for larger devices  */
+@media only screen and (min-width: 48em) {
+  .main-mpesa {
+    height: 100%;
+    flex-direction: row;
+  }
+
+  .pay-simp {
+    display: none;
+  }
+
+  .m-image {
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .py-title p {
+    margin: 0;
+    font-size: 1rem;
+    text-align: start;
+  }
+
+  .mpesa-py {
+    padding: 50px;
+    justify-content: center;
+  }
+}
+
