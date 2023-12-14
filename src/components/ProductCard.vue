@@ -66,7 +66,7 @@ const buyNow = (id) => {
     <div class="product-card-info">
       <div class="product-card-inner-info">
         <h1>{{ props.ShoeName }}</h1>
-        <span>{{ props.Size }}</span>
+        <span>Available Sizes {{ props.Size }}</span>
       </div>
       <div class="product-card-inner-infob">
         <h3>
