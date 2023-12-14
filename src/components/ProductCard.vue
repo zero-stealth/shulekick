@@ -7,7 +7,6 @@ import { useDrawerStore } from '@/stores/drawer'
 
 const toast = useToast()
 const router = useRouter()
-const drawerStore = useDrawerStore()
 const serverHost = import.meta.env.VITE_SERVER_HOST
 const random = Math.floor(Math.random() * 1000)
 const customerId = ref(localStorage.getItem('customerId') || null)

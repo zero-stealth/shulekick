@@ -35,6 +35,7 @@
 
   .product-card-image {
     object-position: center;
+    border-radius: 12px;
     position: absolute;
     object-fit: cover;
     height: 100%;
@@ -142,6 +143,5 @@
 /* using it as global style for larger devices  */
 @media only screen and (min-width: 48em) {
     .product-card {
-        width: 300px;
     }
 }

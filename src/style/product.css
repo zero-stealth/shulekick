@@ -2,6 +2,7 @@
   .product-component {
     height: 80vh;
     display: flex;
+    padding: 10px;
     align-items: center;
     justify-content: space-between;
   }
@@ -52,7 +53,4 @@
 
 /* using it as global style for larger devices  */
 @media only screen and (min-width: 48em) {
-    .product-component {
-        padding: 0;
-    }
 }
